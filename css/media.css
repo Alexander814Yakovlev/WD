@@ -1,0 +1,121 @@
+@media screen and (max-width: 1200px) {
+    .navbar,
+    .skills,
+    .about__flex,
+    .video,
+    .clients__flex {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header__content {
+        padding: 0;
+    }
+    .header__main_content {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+    .about__flex {
+        justify-content: space-around;
+    }
+    .skills__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills__flex_photo {
+        margin-top: 40px;
+    }
+    .gallery__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery__grid-item_img {
+        width: calc(100vw / 3);
+    }
+    .clients__flex {
+        justify-content: space-evenly;
+    }
+    .footer__flex {
+        justify-content: space-evenly;
+    }
+    .footer__text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar__links {
+        display: none;
+    }
+    .burger__menu {
+        display: block;
+    }
+    .header__main_content-text {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .common-text {
+        width: 90%;
+    }
+    .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery__grid-item_img {
+        width: calc(100vw / 2);
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .header__image>img {
+        width: 95vw;
+    }
+    .about__flex {
+        height: fit-content;
+        padding: 20px 0;
+    }
+    .about__item {
+        margin: 10px 0;
+    }
+    .skills__flex_photo>img {
+        width: calc(100vw - 10%);
+        height: calc(100vh -10%);
+    }
+    .skill__progress {
+        width: 80vw;
+    }
+
+    .skill__progress::before {
+        width: calc(80vw - 20%);
+    }
+    .gallery__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery__grid-item_img {
+        width: 100vw;
+    }
+    .clients__flex {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main__form {
+        width: 95vw;
+    }
+
+    .form-input {
+        width: 95vw;
+    }
+    .footer__flex {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .btn {
+        max-width: 90vw;
+    }
+}
